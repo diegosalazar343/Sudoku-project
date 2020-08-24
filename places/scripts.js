@@ -10,21 +10,21 @@ Places.prototype.vacation = function() { // type vacation for combined country a
   return this.city + " " + this.country;
 }
 
-let flor = {name:"florence"}
-let haw = {name: "Hawaii"};
-let jun = {name: "Juneau"};
-let la = { name: "Los Angeles"};
-let phnx = { name: "Phoenix"};
-let pdx = { name: "Portland"};
-let rom= { name:"Rome"};
-let sd = { name: "San Diego"};
-let sfo = { name: "San Francisco"};
-let sea = { name: "Seattle"};
-let vanc = { name: "Vancouver"};
-let vict = { name: "Victoria"};
+let flor = {name:"florence", timeOfYear: "Spring"};
+let haw = {name: "Hawaii", timeOfYear: "Summer"};
+let jun = { name: "Juneau", timeOfYear: "Winter" };
+let la = { name: "Los Angeles", timeOfYear: "Winter"};
+let phnx = { name: "Phoenix", timeOfYear:"Winter"};
+let pdx = { name: "Portland", timeOfYear: "Spring"};
+let rom = { name: "Rome", timeOfYear:"Spring"};
+let sd = { name: "San Diego", timeOfYear:"Spring"};
+let sfo = { name: "San Francisco", timeOfYear: "Fall"};
+let sea = { name: "Seattle", timeOfYear: "Spring"};
+let vanc = { name: "Vancouver", timeOfYear: "Fall"};
+let vict = { name: "Victoria", timeOfYear: "Fall"};
 
 
-let usa = {name: "USA", cities: [haw, jun, la, phnx, pdx, sd, sfo, sea] };
+let usa = {name: "USA", cities:[haw, jun, la, phnx, pdx, sd, sfo, sea] S};
 let can = {name: "Canada", citites: [vanc, vict] };
 let mex = {name: "Italy", cities: [flor, rom] };
 
