@@ -31,3 +31,12 @@ let mex = {name: "Italy", cities: [flor, rom] };
 usa.citites.forEach(function(city) {
   return ("Let's learn about" + city.name + "!");
 });
+
+Places.prototype.vacation = function (id) {
+  for (let i = 0; i < this.vacation.length; i++) {
+    if (this.vacation[i].id == id) {
+      return this.vacation[i];
+    }
+  };
+  return false;
+}
