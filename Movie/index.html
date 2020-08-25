@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Theater</title>
+  <title></title>
+</head>
+
+<body>
+<div class="container">
+  <h1>Movie Theater</h1>
+  <p>Welcome to our theater please enjoy the show!</p>
+    <ul>
+      <li>Toy Story</li>
+        <ol>11:00am, 12:00pm, 1:00pm, 3:30pm, 5:00pm</ol>
+      <li>Wonder Woman</li>
+        <ol>1:30pm, 2:15pm, 4:45pm, 7:00pm, 8:30pm, 9:00pm</ol>
+      <li>Tenet</li>
+        <ol>5:25pm, 6:00pm, 6:45pm, 7:30pm, 8:00pm, 9:15pm</ol>
+      <li>Batman</li>
+        <ol>6:30pm, 8:05pm, 9:05pm</ol>
+      <li>Hamilton</li>
+        <ol> 11:30am, 12:30pm, 1:15pm, 2:00pm</ol>
+    </ul>
+  <div class="row">
+    <div class="col-md-6">
+      <hr>
+      <h2>Movie Info</h2>
+      <form id="movie">
+        <div class="form-group">
+          <label for="movie">What movie were you interested in seeing?</label>
+          <input type="text" class="form-control" id="movie">
+        </div>
+        <div class="form-group">
+          <label for="time">What time did you want to watch the film?</label>
+          <input type="text" class="form-control" id="time">
+        </div>
+        <div class="form-group">
+          <label for="age">What's your age?</label>
+          <input type="text" class="form-control" id="age">
+        </div>
+        <button type="submit" class="btn-primary">Add</button>
+      </form>
+      <hr>
+      <h2>Movie:</h2>
+      <ul id="movie-ticket">
+      </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-total">
+          <p>Your Movie:<span class="movie"></span></p>
+          <p>Start Time: <span class="time"></span></p>
+          <p>Your Price: <span class="age"></span></p>
+          <div id="buttons">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
