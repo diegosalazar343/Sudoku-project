@@ -9,7 +9,17 @@ Movie.prototype.fullticket = function() {
   return this.movie + " " + this.time;     // this might be wrong
 }
 // User Interface Logic
-let movieTotal = new MovieTotal ();
+let movieTotal = new Movie ();
+
+function displayMovieDetails(movieTotalToDisplay) {
+  let movieList = $("ul#movie");
+  let htmlForMovieInfo = "";
+  movieTotalToDisplay.movie.forEach(function (movie) {
+    htmlForMovieInfo += "<li id=" + movie.age + ">" + movie.movie + " " + movie.time + "</li>";
+  });
+  movieList.html(htmlForMovieInfo);
+};
+
 
 function showMovie(movieId) {
   const Movie = movieTotal.findMovie(movieId);
@@ -44,7 +54,6 @@ $(document).ready(function () {
     $("input#time").val("");
     $("input#Age").val("");
     let movie = new Movie(inputtedMovie, inputtedTime, inputtedAge);
-    movieTotal.addMovie(movieTotal);
-    displayMovieDetails(movieTimes);
+    displayMovieDetails(Movie);
   })
 })
