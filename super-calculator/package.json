@@ -1,14 +1,15 @@
 {
   "name": "super-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Spec: Take the input number and return that number. Input: \"12\", \"34\", \"678\" Output:\"12\", \"34\", \"678\"",
   "main": "main.js",
   "scripts": {
+    "start": "node your-script.js",
     "build": "webpack",
     "lint": "eslint src/*.js"
   },
   "keywords": [],
-  "author": "Diego Salazar ",
+  "author": "Diego Salazar",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
