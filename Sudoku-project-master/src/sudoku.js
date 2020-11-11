@@ -9,6 +9,13 @@ export default function Sudoku(row, column){
     return "not equal";
   };
 
+  Sudoku.prototype.makeArray = function() {
+    return rowSudoku;
+  };
 
-// Sudoku.prototype.checkType = function () {
-//   return "I can't answer that yet!";
+
+  // Sudoku.prototype.checkNums = function(number) {
+  //   for(let i = 1; i <= number; i+= 1) {
+  //     this.row = number
+  //   }
+  //};

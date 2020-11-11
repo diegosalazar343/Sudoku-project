@@ -21,9 +21,9 @@ describe('Sudoku', () => {
     expect(notSudoku.checkType()).toEqual("not equal");
   });
 
-  test('row should contain numbers 1-9', () => {
-    const rowSudoku = new Sudoku((1, 2, 3, 4, 5, 6, 7, 8, 9), 9);
-    expect(rowSudoku.checkNums()).toEqual(1, 2, 3, 4, 5, 6, 7, 8, 9);
+  test('row should includes numbers 1-9', () => {
+    const rowSudoku = [];
+    expect(rowSudoku).toEqual(this.row);
   });
 });
 //Test 2:
